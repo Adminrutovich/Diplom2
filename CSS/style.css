@@ -612,7 +612,6 @@
   
   @media (min-width: 641px) and (max-width: 1200px) {
     .product-preview  {
-      background-image: url(../images/shop-item-tablet1.jpg);
       width: 290px;
       height: 225px;
       margin-left: auto;
@@ -624,6 +623,15 @@
       height: 264px;
       box-sizing: border-box;
       border: 3px solid #b59f5b;
+    }
+    .pillow {
+      background-image: url(../images/shop-item-tablet1.jpg);
+    }
+    .bunny {
+      background-image: url(../images/shop-item-tablet2.jpg);      
+    }
+    .frame {
+      background-image: url(../images/shop-item-tablet3.jpg);      
     }
   }
 
@@ -641,6 +649,15 @@
       height: 240px;
       box-sizing: border-box;
       border: 3px solid #b59f5b;
+    }
+    .pillow {
+      background-image: url(../images/shop-item-mobile1.jpg);
+    }
+    .bunny {
+      background-image: url(../images/shop-item-mobile2.jpg);      
+    }
+    .frame {
+      background-image: url(../images/shop-item-mobile3.jpg);      
     }
   }
 
