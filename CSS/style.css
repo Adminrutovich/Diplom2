@@ -399,7 +399,7 @@
   
   @media (max-width: 640px) {
     aside {
-    width: 100%;
+    width: auto;
     margin: 0px 15px;
     }
     .new-post-info {
@@ -486,17 +486,15 @@
   }
   
   @media (max-width: 640px) {
-    .email {
-      display: flex;
-    }
     .email-field {
-      flex-grow: 1;    
+      width: 330px;
+      margin: auto;  
     }
     .subscribe {
-      flex: auto;
+    width: 330px;
+    margin: auto;  
     }
-    .field {
-      flex-grow: 1;
+    
   }
 
   /*---team---*/
