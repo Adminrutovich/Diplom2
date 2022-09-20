@@ -90,6 +90,23 @@
     .menu {
       display: none;
     }
+    .burger-menu {
+      width: 23px;
+      height: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 35px;
+    }
+
+    .burger-menu-link {
+      content: "";
+      display: block;
+      position: relative;
+      margin-bottom: 5px;
+      width: 23px;
+      height: 3px;
+      background: #f4f7f6;
+    }
   }
 
   @media (max-width: 640px) {
@@ -98,6 +115,23 @@
     }
     .menu {
       display: none;
+    }
+    .burger-menu {
+      width: 23px;
+      height: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 35px;
+    }
+
+    .burger-menu-link {
+      content: "";
+      display: block;
+      position: relative;
+      margin-bottom: 5px;
+      width: 23px;
+      height: 3px;
+      background: #f4f7f6;
     }
   }
   
@@ -340,6 +374,24 @@
     margin-bottom: 20px;
   }
   
+  @media (max-width: 640px) {
+    .main-part {
+      width: 100%;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    main {
+      width: 100%;
+
+    }
+    .news {
+      width: 100%; 
+    }
+    .news-preview {
+      max-width: 100%;
+    }
+  }
+  
   /*---aside---*/
   
   aside {
@@ -442,10 +494,7 @@
   
   
   .email {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+
     margin: 17px 0 30px 0;
   }
   
@@ -486,15 +535,19 @@
   }
   
   @media (max-width: 640px) {
+
     .email-field {
-      width: 330px;
-      margin: auto;  
+      width: 100%;  
+      margin: auto; 
     }
     .subscribe {
-    width: 330px;
-    margin: auto;  
+      width: 100%;  
+      margin: auto; 
     }
-    
+    .field {
+      width: 100%;  
+      margin: auto; 
+    }
   }
 
   /*---team---*/
@@ -588,7 +641,7 @@
     background-color: #b59f5b;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 700;  
+    font-weight: 700;
   }
 
   .video-link {
@@ -658,6 +711,10 @@
   }
 
   @media (max-width: 640px) {
+    .product {
+      margin-bottom: 25px;
+    }
+    
     .product-preview  {
       background-image: url(../images/shop-item-mobile1.jpg);
       width: 280px;
@@ -668,7 +725,7 @@
     }
     .product-info {
       width: 330px;
-      height: 240px;
+      height: 260px;
       box-sizing: border-box;
       border: 3px solid #b59f5b;
     }
