@@ -332,6 +332,7 @@
   .news-preview {
     box-sizing: border-box;
     width: 380px;
+    margin-right: 30px;
     }
   
   .news-info {
