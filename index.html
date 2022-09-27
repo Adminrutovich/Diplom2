@@ -38,8 +38,8 @@
             </li>
             </ul>
         </nav>
-        <h1 class="welcome-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
+        <h1 class="welcome-title">Блог о творчестве, спорте, и образе жизни</h1>
     </header>
     <div class="trends_now">
         <h2 class="trends_now-name">
@@ -530,5 +530,49 @@
         </a>
         </div>
         </footer>
+        <div class="popup">
+            <button class="popup__close" type="button">Закрыть окно</button>
+            <div class="popup-container">
+              <div class="feedback">
+                <header class="feedback-header">
+                  <h3 class="feedback-title">ВАШ ФИДБЕК</h3> 
+                </header>
+                <div class="feedback-content">
+                  <form class="feedback-form">
+                    <label class="select-group">
+                        <span class="select-label">Как часто вы заходите на сайт?</span>
+                        <select class="select">
+                          <option value="almost-every-day" selected>Почти каждый день</option>
+                          <option value="week">Раз в неделю</option>
+                          <option value="month">Раз в месяц</option>
+                          <option value="millennium">Раз в 1000 лет</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-group">
+                        <div class="checkbox-text">
+                            <span class="checkbox-text">Вы подписаны на E-mail рассылку?</span>
+                        </div>
+                        <input type="radio" class="radio" name="radio-group">
+                        <span class="radiobutton-text">Да</span>
+                        <input type="radio" class="radio" name="radio-group">
+                        <span class="radiobutton-text">Нет</span>                    
+                    </label>
+                </div>
+                    <div class="form-group">
+                      <label class="field-group">
+                        <span class="field-label">Расскажите какой еонтент вы хотели бы видеть на нашем сайте</span>
+                        <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+                      </label>
+                    </div>
+                    <div class="form-group form-actions">
+                      <button class="button-send" type="send">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>

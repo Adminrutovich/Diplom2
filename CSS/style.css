@@ -68,7 +68,7 @@
     color: #ffffff;
   }
   
-  header {
+  .header {
     background-repeat: no-repeat;
     background-position: left top;
     background-color: #000000;
@@ -78,13 +78,13 @@
   }
 
   @media (min-width: 1201px) {
-    header {
+    .header {
       background-image: url(../images/banner-bg.jpg);
     }
   }
   
   @media (min-width: 641px) and (max-width: 1200px) {
-    header {
+    .header {
       background-image: url(../images/banner-bg-tablet.jpg);
     }
     .menu {
@@ -110,7 +110,7 @@
   }
 
   @media (max-width: 640px) {
-    header {
+    .header {
       background-image: url(../images/banner-mobile.jpg);
     }
     .menu {
@@ -158,6 +158,7 @@
     line-height: 1.67;
     padding-top: 100px;
     padding-bottom: 130px;
+    color: #ffffff;
   }
   
   /*---trends now---*/
@@ -296,7 +297,7 @@
   }
   
   main {
-    width: 780px; 
+    max-width: 780px; 
   }
   
   .news {
@@ -374,6 +375,28 @@
     margin-bottom: 20px;
   }
   
+  @media (min-width: 641px) and (max-width: 1200px) {
+    main {
+      min-width: 370px; 
+    }
+    .news {
+      flex-direction: column;
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+    .news-content::after {
+      content: "";
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      width: 367px;
+      height: 3px;
+      background: #eeeeee;
+    }
+  }
+
   @media (max-width: 640px) {
     .main-part {
       width: 100%;
@@ -390,12 +413,23 @@
     .news-preview {
       max-width: 100%;
     }
+    .news-content::after {
+      content: "";
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      width: 367px;
+      height: 3px;
+      background: #eeeeee;
+    }
   }
   
   /*---aside---*/
   
   aside {
-    width: 272px;
+    max-width: 272px;
     margin-left: 120px;
   }
 
@@ -449,6 +483,18 @@
     font-weight: 700;  
   }
   
+  @media (min-width: 641px) and (max-width: 1200px) {
+   
+    .main-part {
+      flex-wrap: nowrap;
+    }
+
+    aside {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+  }
+
   @media (max-width: 640px) {
     aside {
     width: auto;
@@ -686,6 +732,17 @@
   }
   
   @media (min-width: 641px) and (max-width: 1200px) {
+    .shop {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+    .product {
+      margin-top: 25px;
+    }
+    .frame {
+      flex-direction: column;
+    } 
+
     .product-preview  {
       width: 290px;
       height: 225px;
@@ -802,4 +859,79 @@
     text-align: center;
     color: #999999;
     font-size: 12px;
+  }
+
+    /*----Popup----*/
+  .popup {
+    max-width: 390px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+  }
+
+
+
+  .feedback-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .feedback-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+  }
+
+  .select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 10px 0 35px 0;
+    background-color: #f4f7f6;
+    border: none;
+    font-size: 13px;
+    color: #000000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 10px;
+  }
+  
+  .radiobutton-text {
+    display: inline-block;
+  }
+  .radiobutton-text::before {
+    content: "";
+    display: inline-block;
+    vertical-align: center;
+    width: 16px;
+    height: 16px;
+    background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+  }
+  .radio:checked ~ .radiobutton-text::before {
+    background-image: url(../svg/form-circle.svg);
+  }
+  .radio {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px,);
+    height: 1px;
+    width: 1px;
   }
