@@ -555,15 +555,23 @@
                         <div class="checkbox-text">
                             <span class="checkbox-text">Вы подписаны на E-mail рассылку?</span>
                         </div>
-                        <input type="radio" class="radio" name="radio-group">
-                        <span class="radiobutton-text">Да</span>
-                        <input type="radio" class="radio" name="radio-group">
-                        <span class="radiobutton-text">Нет</span>                    
+                        <div class="radio-group">
+                            <label class="radio-button">
+                                <input type="radio" name="agree" value="yes" class="radiobutton">
+                                <span class="radiobutton-text">Да</span>
+                            </label>
+                            <label class="radio-button">
+                                <input type="radio" name="agree" value="no" class="radiobutton">
+                                <span class="radiobutton-text">Нет</span>  
+                            </label>
+                        </div>  
                     </label>
                 </div>
                     <div class="form-label">
                       <label class="field-group">
+                        <div>
                         <span class="field-label">Расскажите какой контент вы хотели бы видеть на нашем сайте</span>
+                        </div>
                         <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
                       </label>
                     </div>

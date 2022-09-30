@@ -867,7 +867,7 @@
     /*----Popup----*/
 
   .popup-after {
-    display: none;
+
   }
   .popup {
     max-width: 390px;
@@ -929,6 +929,13 @@
   
   .radiobutton-text {
     display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+
+  .radio-button {
+    vertical-align: middle;
+    margin-right: 36px;
   }
 
   .radiobutton-text::before {
@@ -943,11 +950,11 @@
     background-size: 16px;
   }
 
-  .radio:checked ~ .radiobutton-text::before {
+  .radiobutton:checked + .radiobutton-text::before {
     background-image: url(../svg/form-circle.svg);
   }
 
-  .radio {
+  .radiobutton {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px,);
     height: 1px;
@@ -965,6 +972,8 @@
     background-color: #f4f7f6;
     border: none;
     padding: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   .button-send {
@@ -989,7 +998,7 @@
     background-color: transparent;
     background-image: url(../svg/form-x.svg);
     background-repeat: no-repeat;
-    background-size: 16px;
+    background-size: 18px;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -1004,4 +1013,31 @@
     bottom: 0;
     opacity: 0.6;
     z-index: 2;
+  }
+
+
+
+  @media (max-width: 640px) {
+    .popup {
+      font-size: 13px;
+    }
+    .feedback-title {
+      font-size: 20px;
+    }
+    .button-send {
+      font-size: 14px;
+    }
+    .radiobutton-text::before {
+      width: 25px;
+      height: 25px;
+      background-size: 25px;
+    }
+    .popup-close {
+      width: 30px;
+      height: 30px;
+      top: -35px;
+      background-size: 30px;
+    }
+
+
   }
