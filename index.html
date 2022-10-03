@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="wrapper">
     <header class="header">
         <div class="container">
         <a class="logo-link" href="/">
@@ -436,7 +437,13 @@
 
     <article class="shop">
         <section class="product">
-            <div class="product-preview pillow">
+            <div class="product-preview">
+                <picture class="pillow">
+                    <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
+                    <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                    <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                    <img class="pillow-img" src="images/shop-item-desk1.jpg" alt="Декоративная подушка">
+                  </picture>
             </div>
             <div class="product-info">
             <h2 class="product-name">
@@ -458,7 +465,13 @@
             </div>
         </section>
         <section class="product">
-            <div class="product-preview bunny">
+            <div class="product-preview">
+                <picture class="bunny">
+                    <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1201px)">
+                    <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                    <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                    <img class="bunny-img" src="images/shop-item-desk2.jpg" alt="Интерьерная рукодельная кукла «Зайчик»">
+                  </picture>
             </div>
             <div class="product-info">
             <h2 class="product-name">
@@ -481,7 +494,13 @@
             </div>
         </section>
         <section class="product">
-            <div class="product-preview frame">
+            <div class="product-preview">
+                <picture class="frame">
+                    <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1201px)">
+                    <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                    <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                    <img class="frame-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                  </picture>
             </div>
             <div class="product-info">
             <h2 class="product-name">
@@ -584,5 +603,6 @@
             </div>
           </div>
         </div>
+    </div>
     </body>
 </html>

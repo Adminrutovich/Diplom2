@@ -21,6 +21,11 @@
   body {
     font-family: "Open Sans", sans-serif;
   }
+
+      
+  .wrapper {
+    margin: 0 auto;
+  }
   
   /*---header---*/
   
@@ -76,6 +81,32 @@
     background-size: cover;
     z-index: 0;
   }
+  
+  .header-logo {
+    width: 180px;
+  }
+  
+  .menu {
+    margin-top: 11px;
+  }
+  
+  .menu-list-item:nth-child(n+2) {
+    margin-left: 35px;
+  }
+  
+  .welcome-title {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.67;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    color: #ffffff;
+  }
 
   @media (min-width: 1201px) {
     .header {
@@ -107,11 +138,23 @@
       height: 3px;
       background: #f4f7f6;
     }
+
+    .welcome-title {
+      font-size: 40px;
+    }
   }
 
   @media (max-width: 640px) {
+
     .header {
       background-image: url(../images/banner-mobile.jpg);
+    }
+    .header-logo {
+      display: block;
+      width: 270px;
+      margin-top: 225px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .menu {
       display: none;
@@ -119,8 +162,7 @@
     .burger-menu {
       width: 23px;
       height: 20px;
-      margin-top: auto;
-      margin-bottom: auto;
+      margin-top: 32px;
       margin-right: 35px;
     }
 
@@ -133,32 +175,13 @@
       height: 3px;
       background: #f4f7f6;
     }
-  }
-  
-  .header-logo {
-    width: 180px;
-  }
-  
-  .menu {
-    margin-top: 11px;
-  }
-  
-  .menu-list-item:nth-child(n+2) {
-    margin-left: 35px;
-  }
-  
-  .welcome-title {
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    max-width: 700px;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 1.67;
-    padding-top: 100px;
-    padding-bottom: 130px;
-    color: #ffffff;
+
+    .welcome-title {
+      font-size: 26px;
+      width: 280px;
+      padding-top: 40px;
+      padding-bottom: 220px;
+    }
   }
   
   /*---trends now---*/
@@ -410,6 +433,7 @@
     }
     .news {
       width: 100%; 
+      margin: 0;
     }
     .news-preview {
       max-width: 100%;
@@ -498,8 +522,9 @@
 
   @media (max-width: 640px) {
     aside {
-    width: auto;
-    margin: 0px 15px;
+      max-width: 100%;
+      margin-left: 15px;
+      margin: 0px 15px;
     }
     .new-post-info {
       width: 240px;
@@ -651,7 +676,6 @@
     justify-content: space-between;
   }
   .price-box {
-    width: 300px;
     height: 47px;
     margin-left: auto;
     margin-right: auto;
@@ -663,6 +687,7 @@
     width: 160px;
     height: 47px;
     display: inline-block;
+    margin-left: 20px;
   }
 
   .product-oldprice {
@@ -709,7 +734,7 @@
   
   @media (min-width: 1201px) {
     .product-preview {
-      width: 300px;
+      max-width: 300px;
       height: 203px;
       margin-left: auto;
       margin-right: auto;
@@ -721,15 +746,6 @@
       box-sizing: border-box;
       border: 3px solid #b59f5b;
     }
-    .pillow {
-      background-image: url(../images/shop-item-desk1.jpg);
-    }
-    .bunny {
-      background-image: url(../images/shop-item-desk2.jpg);      
-    }
-    .frame {
-      background-image: url(../images/shop-item-desk3.jpg);      
-    }
   }
   
   @media (min-width: 641px) and (max-width: 1200px) {
@@ -739,33 +755,24 @@
     }
     .product {
       margin-top: 25px;
-      width: 50%;
+      width: 48%;
     }
     .frame {
       flex-direction: column;
     } 
 
     .product-preview  {
-      width: 290px;
+      max-width: 290px;
       height: 225px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: -30px;
     }
     .product-info {
-      width: 337px;
+      width: 100%;
       height: 264px;
       box-sizing: border-box;
       border: 3px solid #b59f5b;
-    }
-    .pillow {
-      background-image: url(../images/shop-item-tablet1.jpg);
-    }
-    .bunny {
-      background-image: url(../images/shop-item-tablet2.jpg);      
-    }
-    .frame {
-      background-image: url(../images/shop-item-tablet3.jpg);      
     }
   }
 
@@ -777,26 +784,17 @@
     
     .product-preview  {
       background-image: url(../images/shop-item-mobile1.jpg);
-      width: 280px;
+      max-width: 280px;
       height: 283px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: -30px;
     }
     .product-info {
-      width: 330px;
+      width: 100%;
       height: 260px;
       box-sizing: border-box;
       border: 3px solid #b59f5b;
-    }
-    .pillow {
-      background-image: url(../images/shop-item-mobile1.jpg);
-    }
-    .bunny {
-      background-image: url(../images/shop-item-mobile2.jpg);      
-    }
-    .frame {
-      background-image: url(../images/shop-item-mobile3.jpg);      
     }
   }
 
@@ -867,7 +865,8 @@
     /*----Popup----*/
 
   .popup-after {
-
+    margin-top: 40px;
+    display: none;
   }
   .popup {
     max-width: 390px;
@@ -948,6 +947,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 16px;
+    margin-bottom: -3px;
+    margin-right: 3px;
   }
 
   .radiobutton:checked + .radiobutton-text::before {
